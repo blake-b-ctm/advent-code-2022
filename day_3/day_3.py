@@ -28,6 +28,7 @@ def totalValueOfAllRucksacks(reader):
 
   return totalValue
 
+# Make this intersection of n sets
 def findSharedItemAcrossThree(rucksacks):
   return set(rucksacks[0]).intersection(rucksacks[1], rucksacks[2]).pop()
 
@@ -46,3 +47,4 @@ def totalForGroupsOfThreeElves():
 print('-*-  DAY THREE  -*-')
 print('Total Value of Shared Items:', totalValueOfAllRucksacks(fileReader))
 print('Three Elves shared Values:', totalForGroupsOfThreeElves())
+print()
