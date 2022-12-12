@@ -21,5 +21,5 @@ def return_top_n_values(list, n):
   return top_n_total
 
 print('-*-  DAY ONE  -*-')
-print('Maximum Calorie Total:', return_top_n_values(calorieCounts, 1))
-print('Calorie Total of Top 3:', return_top_n_values(calorieCounts, 3))
+print('Maximum Calorie Total:', return_top_n_values(calorieCounts.copy(), 1))
+print('Calorie Total of Top 3:', return_top_n_values(calorieCounts.copy(), 3))
