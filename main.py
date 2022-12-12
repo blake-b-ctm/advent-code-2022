@@ -1,0 +1,1 @@
+exec(open("day_1/day_1.py").read())
