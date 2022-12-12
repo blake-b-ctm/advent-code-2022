@@ -3,6 +3,11 @@
 # check overlapping schedules
 # if start1 >= start2 and end1 <= end2 - overlapping
 
+def strListToInt(toConvert):
+  for i in range(len(toConvert)):
+    toConvert[i] = int(toConvert[i])
+  return toConvert
+
 def isFullyOverlapping(schedule1, schedule2):
   if schedule1[0] >= schedule2[0] and schedule1[1] <= schedule2[1]:
     return True
@@ -20,10 +25,7 @@ def isOverlapping(schedule1, schedule2):
 def formatSchedules(schedules):
   formatted = []
   for schedule in schedules:
-    toConvert = schedule.split('-')
-    for i in range(len(toConvert)):
-      toConvert[i] = int(toConvert[i])
-    formatted.append(toConvert)
+    formatted.append(strListToInt(schedule.split('-')))
   return formatted
 
 def totalFullyOverlapping():
@@ -47,6 +49,6 @@ def totalOverlapping():
   return total
 
 print('-*-  DAY FOUR  -*-')
-print('Total Fully Overlapping Schedules:', totalFullyOverlapping())
-print('Total Overlapping Schedules:', totalOverlapping())
+print('Fully Overlapping Schedules:', totalFullyOverlapping())
+print('Partially Overlapping Schedules:', totalOverlapping())
 print()

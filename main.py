@@ -2,4 +2,5 @@
 #exec(open("day_2/day_2.py").read())
 #exec(open("day_2/day_2_2.py").read())
 #exec(open("day_3/day_3.py").read())
-exec(open("day_4/day_4.py").read())
+#exec(open("day_4/day_4.py").read())
+exec(open("day_5/day_5.py").read())

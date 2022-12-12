@@ -1,4 +1,5 @@
 fileReader = open("day_2/day_2.txt", "r")
+import day_2_2
 
 def isRock(move):
   return move == 'A'

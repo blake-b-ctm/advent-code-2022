@@ -39,7 +39,6 @@ def totalForGroupsOfThreeElves():
   for line in fileReader:
     lines.append(line.strip('\n'))
     if len(lines) >= 3:
-      print('lines', lines)
       totalValue += calculateSharedItemValue(findSharedItemAcrossThree(lines))
       lines = []
   return totalValue
